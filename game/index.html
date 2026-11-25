@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle Station - A Cooking Game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #1d1712;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #wrap {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 720px;
+    background: #e8dcc3;
+  }
+  #help {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    text-align: center;
+    color: #8a7a66;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">WASD or arrows to move &middot; E or click a station to use it &middot; M to mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
